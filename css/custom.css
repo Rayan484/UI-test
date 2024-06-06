@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/***** General CSS *****/
+
+body {
+    word-break: break-word;
+    font: 15px/25px 'Poppins', sans-serif;
+    color: #393939;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 55px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 0 17px;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 60px;
+    color: #393939;
+    font-weight: 500;
+    margin: 0 0 30px;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 34px;
+    color: #000000;
+    font-weight: 600;
+    margin: 0 0 28px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 29px;
+    color: #393939;
+    font-weight: 500;
+    margin: 0 0 13px;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 25px;
+    color: #393939;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 23px;
+    color: #393939;
+    font-weight: 500;
+    margin: 0 0 22px;
+}
+
+select {
+    background: #fff url('../images/arrow.png') no-repeat right;
+    padding: 0 40px 0 30px;
+}
+
+::-webkit-input-placeholder {
+    color: #575757;
+}
+
+::-moz-placeholder {
+    color: #575757;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #575757;
+}
+
+:-moz-placeholder {
+    color: #575757;
+    opacity: 1;
+}
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/*Warpper Screen*/
+.mobile-screen-wrapper {
+    max-width: 414px;
+    background: #5787dc;
+    margin: 0 auto;
+    height: 100vh;
+}
+/*Warpper Screen*/
+
+/*Header*/
+
+.top-header {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header > a {
+    color: #fff;
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #ffffff87;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Header*/
+
+
+.leter-box {
+    height: 35px;
+    width: 35px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 6px;
+    color: #5787dc;
+}
+
+.message-records {
+    padding: 20px;
+    height: 73%;
+    overflow-y: scroll;
+    position: relative;
+}
+
+
+/*Message Box*/
+
+.message-box {
+    margin: 40px 0;
+}
+
+.sender-info > img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.sender-info {display: flex;align-items: center;gap: 20px;}
+
+.sender-name {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.message-recived {
+    margin: 10px 0;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/*Message Box*/
+/*Mute Button*/
+.mute-button {
+    float: right;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 25px;
+}
+
+.mute-button .fa-volume-slash {
+    display: none;
+}
+
+.mute-button.muted .fa-volume-slash {
+    display: block;
+}
+
+.mute-button.muted .fa-volume {
+    display: none;
+}
+/*Mute Button*/
+/*Shadows*/
+.message-records:before {
+    content: '';
+    position: sticky;
+    height: 100px;
+    width: 100%;
+    top: -20px;
+    background: linear-gradient(178deg, #5787dc, transparent);
+    z-index: 1;
+    display: block;
+    margin: 0 0 -90px;
+}
+.message-records:after {
+    content: '';
+    position: sticky;
+    height: 60px;
+    width: 100%;
+    bottom: -20px;
+    background: linear-gradient(2deg, #5787dc, #5787dc00);
+    z-index: 1;
+    display: block;
+    margin: 0px 0 0;
+}
+/*Shadows*/
+/*Bottom Part*/
+.bottom-part {
+    text-align: center;
+}
+
+.bottom-part p {
+    color: #fff;
+    font-weight: 400;
+}
+
+.bottom-part p>b {
+    font-weight: 600;
+}
+
+.action-button-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action-button-flex > button {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 24px;
+}
+
+.mic-button {
+    background: #fff;
+    color: #5185e1;
+}
+
+.end-call-button {
+    background: red;
+    color: #fff;
+    transform: rotate(135deg);
+}
+/*Bottom Part*/
